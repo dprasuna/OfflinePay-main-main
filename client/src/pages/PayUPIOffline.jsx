@@ -31,7 +31,7 @@ const PayOffline = () => {
         throw new Error("No token found, please log in again.");
       }
 
-      const res = await axios.get("http://localhost:8000/users/getUser", {
+      const res = await axios.get("http://https://offline-pay-main-main.vercel.app/:8000/users/getUser", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -107,7 +107,7 @@ const PayOffline = () => {
       };
 
       const res = await axios.post(
-        "http://localhost:8000/users/sendMoney",
+        "http://https://offline-pay-main-main.vercel.app/:8000/users/sendMoney",
         payload,
         {
           headers: {

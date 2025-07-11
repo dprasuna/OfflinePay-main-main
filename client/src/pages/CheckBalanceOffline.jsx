@@ -21,7 +21,7 @@ export default function CheckBalanceOffline() {
     }
 
     try {
-      const res = await axios.get("http://localhost:8000/users/getUser", {
+      const res = await axios.get("http://https://offline-pay-main-main.vercel.app/:8000/users/getUser", {
         headers: {
           Authorization: `Bearer ${token}`, // Use Bearer Token
         },

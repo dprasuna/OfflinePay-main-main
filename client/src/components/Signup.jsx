@@ -37,7 +37,7 @@ export default function Signup() {
       }
 
       const res = await axios.post(
-        "http://localhost:8000/users/register",
+        "http://https://offline-pay-main-main.vercel.app/:8000/users/register",
         {
           ...formData,
           pin: Number(formData.pin),

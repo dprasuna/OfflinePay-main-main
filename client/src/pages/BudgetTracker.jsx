@@ -35,7 +35,7 @@ const BudgetTracker = () => {
         return;
       }
 
-      const userRes = await axios.get("http://localhost:8000/users/getUser", {
+      const userRes = await axios.get("http://https://offline-pay-main-main.vercel.app/:8000/users/getUser", {
         headers: { Authorization: `Bearer ${token}` },
       });
 
@@ -60,7 +60,7 @@ const BudgetTracker = () => {
       }
 
       setExpenseHistoryLoading(true);
-      const response = await axios.get("http://localhost:8000/users/getExpenses", {
+      const response = await axios.get("http://https://offline-pay-main-main.vercel.app/:8000/users/getExpenses", {
         headers: { Authorization: `Bearer ${token}` },
       });
 
@@ -109,7 +109,7 @@ const BudgetTracker = () => {
 
       setLoading(true);
       const response = await axios.post(
-        "http://localhost:8000/users/addExpense",
+        "http://https://offline-pay-main-main.vercel.app/:8000/users/addExpense",
         expenseData,
         {
           headers: { 
@@ -144,7 +144,7 @@ const BudgetTracker = () => {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.post(
-        "http://localhost:8000/users/updateBudget",
+        "http://https://offline-pay-main-main.vercel.app/:8000/users/updateBudget",
         { budget: Number(budget) },
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -184,7 +184,7 @@ const BudgetTracker = () => {
       };
 
       const response = await axios.put(
-        "http://localhost:8000/users/editExpense",
+        "http://https://offline-pay-main-main.vercel.app/:8000/users/editExpense",
         updatedExpense,
         {
           headers: { 
@@ -223,7 +223,7 @@ const BudgetTracker = () => {
       }
 
       const response = await axios.delete(
-        "http://localhost:8000/users/deleteExpense",
+        "http://https://offline-pay-main-main.vercel.app/:8000/users/deleteExpense",
         {
           headers: { 
             Authorization: `Bearer ${token}`,

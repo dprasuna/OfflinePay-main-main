@@ -55,7 +55,7 @@ npm install
 
 Set Up Environment Variables
 Create a .env file in the server directory and add the following configurations:
-DB_URI=mongodb://localhost:27017/offlinepay
+DB_URI=mongodb://https://offline-pay-main-main.vercel.app/:27017/offlinepay
 TWILIO_ACCOUNT_SID=your_twilio_account_sid
 TWILIO_AUTH_TOKEN=your_twilio_auth_token
 SECRET_KEY=your_secret_key
@@ -71,7 +71,7 @@ Frontend:
 cd client
 npm start
 
-The application will now be available at http://localhost:3000. 🎉
+The application will now be available at http://https://offline-pay-main-main.vercel.app/:3000. 🎉
 
 📱 Usage
 Dashboard Features

@@ -46,7 +46,7 @@ const BudgetTracker = () => {
         return;
       }
 
-      const res = await axios.get("http://localhost:8000/users/getUser", {
+      const res = await axios.get("http://https://offline-pay-main-main.vercel.app/:8000/users/getUser", {
         headers: { Authorization: `Bearer ${token}` },
       });
 
@@ -80,7 +80,7 @@ const BudgetTracker = () => {
   const fetchPieChartData = async (token) => {
     try {
       setLoading(true);
-      const response = await axios.get('http://localhost:8000/users/getPieChartData', {
+      const response = await axios.get('http://https://offline-pay-main-main.vercel.app/:8000/users/getPieChartData', {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -121,7 +121,7 @@ const BudgetTracker = () => {
       }
   
       const response = await axios.post(
-        'http://localhost:8000/users/updatePieChartData',
+        'http://https://offline-pay-main-main.vercel.app/:8000/users/updatePieChartData',
         { categories: updatedCategories },
         {
           headers: {
@@ -203,7 +203,7 @@ const BudgetTracker = () => {
       
       // 1. Clear backend data
       await axios.post(
-        'http://localhost:8000/users/resetPieChartData',
+        'http://https://offline-pay-main-main.vercel.app/:8000/users/resetPieChartData',
         {},
         {
           headers: {
@@ -259,7 +259,7 @@ const BudgetTracker = () => {
       };
 
       const response = await axios.post(
-        "http://localhost:8000/users/addExpense",
+        "http://https://offline-pay-main-main.vercel.app/:8000/users/addExpense",
         { userId, ...newExpense },
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -291,7 +291,7 @@ const BudgetTracker = () => {
     try {
       const token = localStorage.getItem("token");
       await axios.post(
-        "http://localhost:8000/users/updateBudget",
+        "http://https://offline-pay-main-main.vercel.app/:8000/users/updateBudget",
         { budget: parseFloat(budget) },
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -313,7 +313,7 @@ const BudgetTracker = () => {
     try {
       const token = localStorage.getItem("token");
       await axios.post(
-        "http://localhost:8000/users/setGoal",
+        "http://https://offline-pay-main-main.vercel.app/:8000/users/setGoal",
         { goal: parseFloat(goal) },
         { headers: { Authorization: `Bearer ${token}` } }
       );

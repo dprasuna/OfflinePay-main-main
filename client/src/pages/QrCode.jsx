@@ -14,7 +14,7 @@ const QrCode = () => {
   const getUser = async () => {
     try {
       const token = localStorage.getItem("token"); // Ensure token is retrieved
-      const res = await axios.get("http://localhost:8000/users/getUser", {
+      const res = await axios.get("http://https://offline-pay-main-main.vercel.app/:8000/users/getUser", {
         headers: {
           Authorization: `Bearer ${token}`, // Proper token format
         },

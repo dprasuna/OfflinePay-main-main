@@ -25,10 +25,10 @@ const HomeOnline = () => {
 
     try {
       console.log("Making API request to fetch user data...");
-      console.log("Request URL:", "http://localhost:8000/users/getUser");
+      console.log("Request URL:", "http://https://offline-pay-main-main.vercel.app/:8000/users/getUser");
       console.log("Request Headers:", { Authorization: `Bearer ${token}` });
 
-      const res = await axios.get("http://localhost:8000/users/getUser", {
+      const res = await axios.get("http://https://offline-pay-main-main.vercel.app/:8000/users/getUser", {
         headers: {
           Authorization: `Bearer ${token}`,
         },

@@ -24,7 +24,7 @@ function App() {
   // Fetch notes
   const fetchNotes = async () => {
     try {
-      const response = await axios.get('http://localhost:8000/users/notes', { 
+      const response = await axios.get('http://https://offline-pay-main-main.vercel.app/:8000/users/notes', { 
         params: { userId } 
       });
       setNotes(response.data);
@@ -54,7 +54,7 @@ function App() {
   // Note CRUD operations
   const handleCreateNote = async () => {
     try {
-      const response = await axios.post('http://localhost:8000/users/notes', {
+      const response = await axios.post('http://https://offline-pay-main-main.vercel.app/:8000/users/notes', {
         title,
         content,
         category,
@@ -70,7 +70,7 @@ function App() {
   const handleUpdateNote = async () => {
     try {
       const response = await axios.put(
-        `http://localhost:8000/users/notes/${selectedNoteId}`,
+        `http://https://offline-pay-main-main.vercel.app/:8000/users/notes/${selectedNoteId}`,
         { title, content, category }
       );
       setNotes(notes.map(note => 
@@ -84,7 +84,7 @@ function App() {
 
   const handleDeleteNote = async (id) => {
     try {
-      await axios.delete(`http://localhost:8000/users/notes/${id}`);
+      await axios.delete(`http://https://offline-pay-main-main.vercel.app/:8000/users/notes/${id}`);
       setNotes(notes.filter(note => note._id !== id));
     } catch (error) {
       console.error('Error deleting note:', error);
@@ -95,7 +95,7 @@ function App() {
     try {
       const note = notes.find(note => note._id === id);
       const response = await axios.put(
-        `http://localhost:8000/users/notes/${id}`,
+        `http://https://offline-pay-main-main.vercel.app/:8000/users/notes/${id}`,
         { pinned: !note.pinned }
       );
       setNotes(notes.map(note => 
@@ -110,7 +110,7 @@ function App() {
     try {
       const note = notes.find(note => note._id === id);
       const response = await axios.put(
-        `http://localhost:8000/users/notes/${id}`,
+        `http://https://offline-pay-main-main.vercel.app/:8000/users/notes/${id}`,
         { archived: !note.archived }
       );
       setNotes(notes.map(note => 
