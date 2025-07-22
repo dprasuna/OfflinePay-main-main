@@ -24,7 +24,11 @@ function App() {
   // Fetch notes
   const fetchNotes = async () => {
     try {
+<<<<<<< HEAD
       const response = await axios.get(' http://localhost:8000/users/notes', { 
+=======
+      const response = await axios.get('http://https://offline-pay-main-main.vercel.app/:8000/users/notes', { 
+>>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
         params: { userId } 
       });
       setNotes(response.data);
@@ -54,7 +58,11 @@ function App() {
   // Note CRUD operations
   const handleCreateNote = async () => {
     try {
+<<<<<<< HEAD
       const response = await axios.post(' http://localhost:8000/users/notes', {
+=======
+      const response = await axios.post('http://https://offline-pay-main-main.vercel.app/:8000/users/notes', {
+>>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
         title,
         content,
         category,
@@ -70,7 +78,11 @@ function App() {
   const handleUpdateNote = async () => {
     try {
       const response = await axios.put(
+<<<<<<< HEAD
         ` http://localhost:8000/users/notes/${selectedNoteId}`,
+=======
+        `http://https://offline-pay-main-main.vercel.app/:8000/users/notes/${selectedNoteId}`,
+>>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
         { title, content, category }
       );
       setNotes(notes.map(note => 
@@ -84,7 +96,11 @@ function App() {
 
   const handleDeleteNote = async (id) => {
     try {
+<<<<<<< HEAD
       await axios.delete(` http://localhost:8000/users/notes/${id}`);
+=======
+      await axios.delete(`http://https://offline-pay-main-main.vercel.app/:8000/users/notes/${id}`);
+>>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
       setNotes(notes.filter(note => note._id !== id));
     } catch (error) {
       console.error('Error deleting note:', error);
@@ -95,7 +111,11 @@ function App() {
     try {
       const note = notes.find(note => note._id === id);
       const response = await axios.put(
+<<<<<<< HEAD
         ` http://localhost:8000/users/notes/${id}`,
+=======
+        `http://https://offline-pay-main-main.vercel.app/:8000/users/notes/${id}`,
+>>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
         { pinned: !note.pinned }
       );
       setNotes(notes.map(note => 
@@ -110,7 +130,11 @@ function App() {
     try {
       const note = notes.find(note => note._id === id);
       const response = await axios.put(
+<<<<<<< HEAD
         ` http://localhost:8000/users/notes/${id}`,
+=======
+        `http://https://offline-pay-main-main.vercel.app/:8000/users/notes/${id}`,
+>>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
         { archived: !note.archived }
       );
       setNotes(notes.map(note => 
