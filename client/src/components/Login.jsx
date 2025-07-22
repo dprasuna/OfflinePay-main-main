@@ -23,11 +23,7 @@ export default function Login() {
     e.preventDefault();
     setLoading(true);
     try {
-<<<<<<< HEAD
-      const res = await axios.post(" https://offlinepay-main-main-4.onrender.com//users/login", {
-=======
-      const res = await axios.post("https://offlinepay-main-main-4.onrender.com/users/login", {
->>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
+      const res = await axios.post(" https://offlinepay-main-main-4.onrender.com/users/login", {
         userName,
         password,
       });
