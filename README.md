@@ -107,10 +107,8 @@ React.js – for providing a robust front-end framework. ⚛️
 Node.js – for the reliable backend framework. 🖥
 "Empowering transactions, no matter the connection." 🌐
 
-
 Contact Us 📞
 OfflinePay Team
 📧 Email: prasunadash2005@gmail.com
 🌐 Website: [https://off-pay.netlify.app/]
 📍 Location: Odisha,Bhubaneswer
-

@@ -29,7 +29,7 @@ const QrScanner = () => {
         return;
       }
 
-      const res = await axios.get("http://localhost:8000/users/getUser", {
+      const res = await axios.get(" http://localhost:8000/users/getUser", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -84,7 +84,7 @@ const QrScanner = () => {
       }
 
       const res = await axios.post(
-        "http://localhost:8000/users/sendMoney",
+        " http://localhost:8000/users/sendMoney",
         paymentData,
         {
           headers: {
