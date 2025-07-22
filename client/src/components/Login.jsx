@@ -24,9 +24,9 @@ export default function Login() {
     setLoading(true);
     try {
 <<<<<<< HEAD
-      const res = await axios.post(" http://localhost:8000/users/login", {
+      const res = await axios.post(" http://localhost:8000//users/login", {
 =======
-      const res = await axios.post("http://https://offline-pay-main-main.vercel.app/:8000/users/login", {
+      const res = await axios.post("http://localhost:8000/users/login", {
 >>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
         userName,
         password,

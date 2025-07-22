@@ -36,9 +36,9 @@ const BudgetTracker = () => {
       }
 
 <<<<<<< HEAD
-      const userRes = await axios.get(" http://localhost:8000/users/getUser", {
+      const userRes = await axios.get(" http://localhost:8000//users/getUser", {
 =======
-      const userRes = await axios.get("http://https://offline-pay-main-main.vercel.app/:8000/users/getUser", {
+      const userRes = await axios.get("http://localhost:8000/users/getUser", {
 >>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
         headers: { Authorization: `Bearer ${token}` },
       });
@@ -65,9 +65,9 @@ const BudgetTracker = () => {
 
       setExpenseHistoryLoading(true);
 <<<<<<< HEAD
-      const response = await axios.get(" http://localhost:8000/users/getExpenses", {
+      const response = await axios.get(" http://localhost:8000//users/getExpenses", {
 =======
-      const response = await axios.get("http://https://offline-pay-main-main.vercel.app/:8000/users/getExpenses", {
+      const response = await axios.get("http://localhost:8000/users/getExpenses", {
 >>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
         headers: { Authorization: `Bearer ${token}` },
       });
@@ -118,9 +118,9 @@ const BudgetTracker = () => {
       setLoading(true);
       const response = await axios.post(
 <<<<<<< HEAD
-        " http://localhost:8000/users/addExpense",
+        " http://localhost:8000//users/addExpense",
 =======
-        "http://https://offline-pay-main-main.vercel.app/:8000/users/addExpense",
+        "http://localhost:8000/users/addExpense",
 >>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
         expenseData,
         {
@@ -157,9 +157,9 @@ const BudgetTracker = () => {
       const token = localStorage.getItem("token");
       const response = await axios.post(
 <<<<<<< HEAD
-        " http://localhost:8000/users/updateBudget",
+        " http://localhost:8000//users/updateBudget",
 =======
-        "http://https://offline-pay-main-main.vercel.app/:8000/users/updateBudget",
+        "http://localhost:8000/users/updateBudget",
 >>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
         { budget: Number(budget) },
         { headers: { Authorization: `Bearer ${token}` } }
@@ -201,9 +201,9 @@ const BudgetTracker = () => {
 
       const response = await axios.put(
 <<<<<<< HEAD
-        " http://localhost:8000/users/editExpense",
+        " http://localhost:8000//users/editExpense",
 =======
-        "http://https://offline-pay-main-main.vercel.app/:8000/users/editExpense",
+        "http://localhost:8000/users/editExpense",
 >>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
         updatedExpense,
         {
@@ -244,9 +244,9 @@ const BudgetTracker = () => {
 
       const response = await axios.delete(
 <<<<<<< HEAD
-        " http://localhost:8000/users/deleteExpense",
+        " http://localhost:8000//users/deleteExpense",
 =======
-        "http://https://offline-pay-main-main.vercel.app/:8000/users/deleteExpense",
+        "http://localhost:8000/users/deleteExpense",
 >>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
         {
           headers: { 

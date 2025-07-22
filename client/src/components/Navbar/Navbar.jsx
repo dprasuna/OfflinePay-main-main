@@ -48,9 +48,9 @@ function Navbar() {
       }
 
 <<<<<<< HEAD
-      const res = await axios.get(" http://localhost:8000/users/getUser", {
+      const res = await axios.get(" http://localhost:8000//users/getUser", {
 =======
-      const res = await axios.get("http://https://offline-pay-main-main.vercel.app/:8000/users/getUser", {
+      const res = await axios.get("http://localhost:8000/users/getUser", {
 >>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
         headers: {
           Authorization: `Bearer ${token}`,
