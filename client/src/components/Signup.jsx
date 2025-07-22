@@ -38,9 +38,9 @@ export default function Signup() {
 
       const res = await axios.post(
 <<<<<<< HEAD
-        " http://localhost:8000//users/register",
+        " https://offlinepay-main-main-4.onrender.com//users/register",
 =======
-        "http://localhost:8000/users/register",
+        "https://offlinepay-main-main-4.onrender.com/users/register",
 >>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
         {
           ...formData,

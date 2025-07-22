@@ -25,9 +25,9 @@ function App() {
   const fetchNotes = async () => {
     try {
 <<<<<<< HEAD
-      const response = await axios.get(' http://localhost:8000//users/notes', { 
+      const response = await axios.get(' https://offlinepay-main-main-4.onrender.com//users/notes', { 
 =======
-      const response = await axios.get('http://localhost:8000/users/notes', { 
+      const response = await axios.get('https://offlinepay-main-main-4.onrender.com/users/notes', { 
 >>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
         params: { userId } 
       });
@@ -59,9 +59,9 @@ function App() {
   const handleCreateNote = async () => {
     try {
 <<<<<<< HEAD
-      const response = await axios.post(' http://localhost:8000//users/notes', {
+      const response = await axios.post(' https://offlinepay-main-main-4.onrender.com//users/notes', {
 =======
-      const response = await axios.post('http://localhost:8000/users/notes', {
+      const response = await axios.post('https://offlinepay-main-main-4.onrender.com/users/notes', {
 >>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
         title,
         content,
@@ -79,9 +79,9 @@ function App() {
     try {
       const response = await axios.put(
 <<<<<<< HEAD
-        ` http://localhost:8000//users/notes/${selectedNoteId}`,
+        ` https://offlinepay-main-main-4.onrender.com//users/notes/${selectedNoteId}`,
 =======
-        `http://localhost:8000/users/notes/${selectedNoteId}`,
+        `https://offlinepay-main-main-4.onrender.com/users/notes/${selectedNoteId}`,
 >>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
         { title, content, category }
       );
@@ -97,9 +97,9 @@ function App() {
   const handleDeleteNote = async (id) => {
     try {
 <<<<<<< HEAD
-      await axios.delete(` http://localhost:8000//users/notes/${id}`);
+      await axios.delete(` https://offlinepay-main-main-4.onrender.com//users/notes/${id}`);
 =======
-      await axios.delete(`http://localhost:8000/users/notes/${id}`);
+      await axios.delete(`https://offlinepay-main-main-4.onrender.com/users/notes/${id}`);
 >>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
       setNotes(notes.filter(note => note._id !== id));
     } catch (error) {
@@ -112,9 +112,9 @@ function App() {
       const note = notes.find(note => note._id === id);
       const response = await axios.put(
 <<<<<<< HEAD
-        ` http://localhost:8000//users/notes/${id}`,
+        ` https://offlinepay-main-main-4.onrender.com//users/notes/${id}`,
 =======
-        `http://localhost:8000/users/notes/${id}`,
+        `https://offlinepay-main-main-4.onrender.com/users/notes/${id}`,
 >>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
         { pinned: !note.pinned }
       );
@@ -131,9 +131,9 @@ function App() {
       const note = notes.find(note => note._id === id);
       const response = await axios.put(
 <<<<<<< HEAD
-        ` http://localhost:8000//users/notes/${id}`,
+        ` https://offlinepay-main-main-4.onrender.com//users/notes/${id}`,
 =======
-        `http://localhost:8000/users/notes/${id}`,
+        `https://offlinepay-main-main-4.onrender.com/users/notes/${id}`,
 >>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
         { archived: !note.archived }
       );

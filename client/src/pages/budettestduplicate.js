@@ -47,9 +47,9 @@ const BudgetTracker = () => {
       }
 
 <<<<<<< HEAD
-      const res = await axios.get(" http://localhost:8000//users/getUser", {
+      const res = await axios.get(" https://offlinepay-main-main-4.onrender.com//users/getUser", {
 =======
-      const res = await axios.get("http://localhost:8000/users/getUser", {
+      const res = await axios.get("https://offlinepay-main-main-4.onrender.com/users/getUser", {
 >>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
         headers: { Authorization: `Bearer ${token}` },
       });
@@ -85,9 +85,9 @@ const BudgetTracker = () => {
     try {
       setLoading(true);
 <<<<<<< HEAD
-      const response = await axios.get(' http://localhost:8000//users/getPieChartData', {
+      const response = await axios.get(' https://offlinepay-main-main-4.onrender.com//users/getPieChartData', {
 =======
-      const response = await axios.get('http://localhost:8000/users/getPieChartData', {
+      const response = await axios.get('https://offlinepay-main-main-4.onrender.com/users/getPieChartData', {
 >>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
         headers: {
           Authorization: `Bearer ${token}`
@@ -130,9 +130,9 @@ const BudgetTracker = () => {
   
       const response = await axios.post(
 <<<<<<< HEAD
-        ' http://localhost:8000//users/updatePieChartData',
+        ' https://offlinepay-main-main-4.onrender.com//users/updatePieChartData',
 =======
-        'http://localhost:8000/users/updatePieChartData',
+        'https://offlinepay-main-main-4.onrender.com/users/updatePieChartData',
 >>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
         { categories: updatedCategories },
         {
@@ -216,9 +216,9 @@ const BudgetTracker = () => {
       // 1. Clear backend data
       await axios.post(
 <<<<<<< HEAD
-        ' http://localhost:8000//users/resetPieChartData',
+        ' https://offlinepay-main-main-4.onrender.com//users/resetPieChartData',
 =======
-        'http://localhost:8000/users/resetPieChartData',
+        'https://offlinepay-main-main-4.onrender.com/users/resetPieChartData',
 >>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
         {},
         {
@@ -276,9 +276,9 @@ const BudgetTracker = () => {
 
       const response = await axios.post(
 <<<<<<< HEAD
-        " http://localhost:8000//users/addExpense",
+        " https://offlinepay-main-main-4.onrender.com//users/addExpense",
 =======
-        "http://localhost:8000/users/addExpense",
+        "https://offlinepay-main-main-4.onrender.com/users/addExpense",
 >>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
         { userId, ...newExpense },
         { headers: { Authorization: `Bearer ${token}` } }
@@ -312,9 +312,9 @@ const BudgetTracker = () => {
       const token = localStorage.getItem("token");
       await axios.post(
 <<<<<<< HEAD
-        " http://localhost:8000//users/updateBudget",
+        " https://offlinepay-main-main-4.onrender.com//users/updateBudget",
 =======
-        "http://localhost:8000/users/updateBudget",
+        "https://offlinepay-main-main-4.onrender.com/users/updateBudget",
 >>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
         { budget: parseFloat(budget) },
         { headers: { Authorization: `Bearer ${token}` } }
@@ -338,9 +338,9 @@ const BudgetTracker = () => {
       const token = localStorage.getItem("token");
       await axios.post(
 <<<<<<< HEAD
-        " http://localhost:8000//users/setGoal",
+        " https://offlinepay-main-main-4.onrender.com//users/setGoal",
 =======
-        "http://localhost:8000/users/setGoal",
+        "https://offlinepay-main-main-4.onrender.com/users/setGoal",
 >>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
         { goal: parseFloat(goal) },
         { headers: { Authorization: `Bearer ${token}` } }

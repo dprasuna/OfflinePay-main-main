@@ -26,15 +26,15 @@ const HomeOnline = () => {
     try {
       console.log("Making API request to fetch user data...");
 <<<<<<< HEAD
-      console.log("Request URL:", " http://localhost:8000//users/getUser");
+      console.log("Request URL:", " https://offlinepay-main-main-4.onrender.com//users/getUser");
       console.log("Request Headers:", { Authorization: `Bearer ${token}` });
 
-      const res = await axios.get(" http://localhost:8000//users/getUser", {
+      const res = await axios.get(" https://offlinepay-main-main-4.onrender.com//users/getUser", {
 =======
-      console.log("Request URL:", "http://localhost:8000/users/getUser");
+      console.log("Request URL:", "https://offlinepay-main-main-4.onrender.com/users/getUser");
       console.log("Request Headers:", { Authorization: `Bearer ${token}` });
 
-      const res = await axios.get("http://localhost:8000/users/getUser", {
+      const res = await axios.get("https://offlinepay-main-main-4.onrender.com/users/getUser", {
 >>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
         headers: {
           Authorization: `Bearer ${token}`,
