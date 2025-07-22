@@ -1,6 +1,6 @@
 
 const Budget = require("../models/BudgetModel");
-const User = require("../models/UserModel");
+const User = require("../models/userModel");
 require("dotenv").config({ path: "./server/.env" });
 const jwt = require("jsonwebtoken");
 
