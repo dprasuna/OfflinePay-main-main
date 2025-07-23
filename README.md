@@ -1,4 +1,8 @@
 # **OfflinePay** 🚀💳
+Demo Login Credentials 
+
+Username : qwe
+Password : qwe123
 
 Welcome to **OfflinePay**, a cutting-edge solution revolutionizing offline payments and transactions! At **OfflinePay**, we believe in simplifying financial transactions, even in environments with limited or no internet access. Whether you're a business, merchant, or individual, OfflinePay ensures smooth, secure, and fast payments offline. 
 
