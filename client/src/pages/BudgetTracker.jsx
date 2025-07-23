@@ -36,7 +36,7 @@ const BudgetTracker = () => {
       }
 
 <<<<<<< HEAD
-      const userRes = await axios.get(" https://offlinepay-main-main-4.onrender.com//users/getUser", {
+      const userRes = await axios.get(" https://offlinepay-main-main-4.onrender.com/users/getUser", {
 =======
       const userRes = await axios.get("https://offlinepay-main-main-4.onrender.com/users/getUser", {
 >>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
@@ -65,7 +65,7 @@ const BudgetTracker = () => {
 
       setExpenseHistoryLoading(true);
 <<<<<<< HEAD
-      const response = await axios.get(" https://offlinepay-main-main-4.onrender.com//users/getExpenses", {
+      const response = await axios.get(" https://offlinepay-main-main-4.onrender.com/users/getExpenses", {
 =======
       const response = await axios.get("https://offlinepay-main-main-4.onrender.com/users/getExpenses", {
 >>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
@@ -118,7 +118,7 @@ const BudgetTracker = () => {
       setLoading(true);
       const response = await axios.post(
 <<<<<<< HEAD
-        " https://offlinepay-main-main-4.onrender.com//users/addExpense",
+        " https://offlinepay-main-main-4.onrender.com/users/addExpense",
 =======
         "https://offlinepay-main-main-4.onrender.com/users/addExpense",
 >>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
@@ -157,7 +157,7 @@ const BudgetTracker = () => {
       const token = localStorage.getItem("token");
       const response = await axios.post(
 <<<<<<< HEAD
-        " https://offlinepay-main-main-4.onrender.com//users/updateBudget",
+        " https://offlinepay-main-main-4.onrender.com/users/updateBudget",
 =======
         "https://offlinepay-main-main-4.onrender.com/users/updateBudget",
 >>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
@@ -201,7 +201,7 @@ const BudgetTracker = () => {
 
       const response = await axios.put(
 <<<<<<< HEAD
-        " https://offlinepay-main-main-4.onrender.com//users/editExpense",
+        " https://offlinepay-main-main-4.onrender.com/users/editExpense",
 =======
         "https://offlinepay-main-main-4.onrender.com/users/editExpense",
 >>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
@@ -244,7 +244,7 @@ const BudgetTracker = () => {
 
       const response = await axios.delete(
 <<<<<<< HEAD
-        " https://offlinepay-main-main-4.onrender.com//users/deleteExpense",
+        " https://offlinepay-main-main-4.onrender.com/users/deleteExpense",
 =======
         "https://offlinepay-main-main-4.onrender.com/users/deleteExpense",
 >>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d

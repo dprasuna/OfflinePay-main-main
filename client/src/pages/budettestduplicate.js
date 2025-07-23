@@ -47,7 +47,7 @@ const BudgetTracker = () => {
       }
 
 <<<<<<< HEAD
-      const res = await axios.get(" https://offlinepay-main-main-4.onrender.com//users/getUser", {
+      const res = await axios.get(" https://offlinepay-main-main-4.onrender.com/users/getUser", {
 =======
       const res = await axios.get("https://offlinepay-main-main-4.onrender.com/users/getUser", {
 >>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
@@ -85,7 +85,7 @@ const BudgetTracker = () => {
     try {
       setLoading(true);
 <<<<<<< HEAD
-      const response = await axios.get(' https://offlinepay-main-main-4.onrender.com//users/getPieChartData', {
+      const response = await axios.get(' https://offlinepay-main-main-4.onrender.com/users/getPieChartData', {
 =======
       const response = await axios.get('https://offlinepay-main-main-4.onrender.com/users/getPieChartData', {
 >>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
@@ -130,7 +130,7 @@ const BudgetTracker = () => {
   
       const response = await axios.post(
 <<<<<<< HEAD
-        ' https://offlinepay-main-main-4.onrender.com//users/updatePieChartData',
+        ' https://offlinepay-main-main-4.onrender.com/users/updatePieChartData',
 =======
         'https://offlinepay-main-main-4.onrender.com/users/updatePieChartData',
 >>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
@@ -216,7 +216,7 @@ const BudgetTracker = () => {
       // 1. Clear backend data
       await axios.post(
 <<<<<<< HEAD
-        ' https://offlinepay-main-main-4.onrender.com//users/resetPieChartData',
+        ' https://offlinepay-main-main-4.onrender.com/users/resetPieChartData',
 =======
         'https://offlinepay-main-main-4.onrender.com/users/resetPieChartData',
 >>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
@@ -276,7 +276,7 @@ const BudgetTracker = () => {
 
       const response = await axios.post(
 <<<<<<< HEAD
-        " https://offlinepay-main-main-4.onrender.com//users/addExpense",
+        " https://offlinepay-main-main-4.onrender.com/users/addExpense",
 =======
         "https://offlinepay-main-main-4.onrender.com/users/addExpense",
 >>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
@@ -312,7 +312,7 @@ const BudgetTracker = () => {
       const token = localStorage.getItem("token");
       await axios.post(
 <<<<<<< HEAD
-        " https://offlinepay-main-main-4.onrender.com//users/updateBudget",
+        " https://offlinepay-main-main-4.onrender.com/users/updateBudget",
 =======
         "https://offlinepay-main-main-4.onrender.com/users/updateBudget",
 >>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
@@ -338,7 +338,7 @@ const BudgetTracker = () => {
       const token = localStorage.getItem("token");
       await axios.post(
 <<<<<<< HEAD
-        " https://offlinepay-main-main-4.onrender.com//users/setGoal",
+        " https://offlinepay-main-main-4.onrender.com/users/setGoal",
 =======
         "https://offlinepay-main-main-4.onrender.com/users/setGoal",
 >>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
