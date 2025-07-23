@@ -31,11 +31,7 @@ const PayOffline = () => {
         throw new Error("No token found, please log in again.");
       }
 
-<<<<<<< HEAD
       const res = await axios.get(" https://offlinepay-main-main-4.onrender.com/users/getUser", {
-=======
-      const res = await axios.get("https://offlinepay-main-main-4.onrender.com/users/getUser", {
->>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -111,11 +107,7 @@ const PayOffline = () => {
       };
 
       const res = await axios.post(
-<<<<<<< HEAD
         " https://offlinepay-main-main-4.onrender.com/users/sendMoney",
-=======
-        "https://offlinepay-main-main-4.onrender.com/users/sendMoney",
->>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
         payload,
         {
           headers: {

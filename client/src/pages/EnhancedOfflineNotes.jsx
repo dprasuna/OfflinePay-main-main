@@ -24,11 +24,7 @@ function App() {
   // Fetch notes
   const fetchNotes = async () => {
     try {
-<<<<<<< HEAD
       const response = await axios.get(' https://offlinepay-main-main-4.onrender.com/users/notes', { 
-=======
-      const response = await axios.get('https://offlinepay-main-main-4.onrender.com/users/notes', { 
->>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
         params: { userId } 
       });
       setNotes(response.data);
@@ -58,11 +54,7 @@ function App() {
   // Note CRUD operations
   const handleCreateNote = async () => {
     try {
-<<<<<<< HEAD
       const response = await axios.post(' https://offlinepay-main-main-4.onrender.com/users/notes', {
-=======
-      const response = await axios.post('https://offlinepay-main-main-4.onrender.com/users/notes', {
->>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
         title,
         content,
         category,
@@ -78,11 +70,7 @@ function App() {
   const handleUpdateNote = async () => {
     try {
       const response = await axios.put(
-<<<<<<< HEAD
         ` https://offlinepay-main-main-4.onrender.com/users/notes/${selectedNoteId}`,
-=======
-        `https://offlinepay-main-main-4.onrender.com/users/notes/${selectedNoteId}`,
->>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
         { title, content, category }
       );
       setNotes(notes.map(note => 
@@ -96,11 +84,7 @@ function App() {
 
   const handleDeleteNote = async (id) => {
     try {
-<<<<<<< HEAD
       await axios.delete(` https://offlinepay-main-main-4.onrender.com/users/notes/${id}`);
-=======
-      await axios.delete(`https://offlinepay-main-main-4.onrender.com/users/notes/${id}`);
->>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
       setNotes(notes.filter(note => note._id !== id));
     } catch (error) {
       console.error('Error deleting note:', error);
@@ -111,11 +95,7 @@ function App() {
     try {
       const note = notes.find(note => note._id === id);
       const response = await axios.put(
-<<<<<<< HEAD
         ` https://offlinepay-main-main-4.onrender.com/users/notes/${id}`,
-=======
-        `https://offlinepay-main-main-4.onrender.com/users/notes/${id}`,
->>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
         { pinned: !note.pinned }
       );
       setNotes(notes.map(note => 
@@ -130,11 +110,7 @@ function App() {
     try {
       const note = notes.find(note => note._id === id);
       const response = await axios.put(
-<<<<<<< HEAD
         ` https://offlinepay-main-main-4.onrender.com/users/notes/${id}`,
-=======
-        `https://offlinepay-main-main-4.onrender.com/users/notes/${id}`,
->>>>>>> a4332c350a7cd6eaf90a8b1477bf78984905864d
         { archived: !note.archived }
       );
       setNotes(notes.map(note => 
